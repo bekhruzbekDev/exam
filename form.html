@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/form.css" />
+    <link rel="stylesheet" href="./src/css/media.css" />
+    <title>Dine Restaurant</title>
+  </head>
+  <body>
+    <header class="form-header">
+      <div class="container form-header_container">
+        <img src="./src/img/icons/dine.svg" alt="icon" />
+        <div class="info">
+          <div class="text">
+            <h1>Reservations</h1>
+            <p>We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+           <a href="./index.html"> <button class="btn">RESERVE PLACE</button></a>
+          </div>
+          <form class="form">
+            <div>
+              <input type="text" placeholder="Name" id="name" class="inputs">
+              <span></span>
+            </div>
+            <div>
+              <input type="email" placeholder="email" id="email"  class="inputs">
+              <span></span>
+            </div>
+            <div class="date">
+                <div>
+                    <p class="inputTitle">Pick a date</p>
+                    <span class="dateError"></span>
+                </div>
+            <div class="input">
+                <input type="number" placeholder="MM" class="dateNumber inputs">
+                <input type="number" placeholder="DD" class="dateNumber inputs">
+                <input type="number" placeholder="YYYY" class="dateNumber inputs">
+            </div>
+            </div>
+            <div class="date">
+                <div>
+                    <p class="timeTitle">Pick a time</p>
+                    <span class="timeError"></span>
+                </div>
+            <div class="input">
+                <input type="number" placeholder="09" class="number inputs time">
+                <input type="number" placeholder="00" class="number inputs time">
+                <div class="clock number">
+                    <p class="clock-text">AM</p>
+                   <img src="./src/img/icons/clock-icon.svg" alt="icon" class="clockImg">
+                </div>
+                <div class="clock-Active hade">
+                    <div class="div">
+                        <img src="./src/img/icons/clock-active.svg" alt="icon" class="clockIcon">       
+                        <p>AM</p>
+                    </div>
+                    <p class="p">PM</p>
+                </div>
+            </div>
+            </div>
+            <div class="people">
+                <span class="peopleBtn separation ">-</span>
+                <p><span class="peopleCount">4 </span>people</p>
+                <span class="peopleBtn bird">+</span>
+            </div>
+            <button>MAKE RESERVATION</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="icons-bg">
+        <img src="./src/img/icons/card-icon.svg" alt="icon">
+    </div>
+    <footer class="footer">
+        <div class="footer-info">
+          <div class="container footer-container">
+            <img src="./src/img/icons/dine.svg" alt="logo" />
+            <div class="footer-list">
+              <div class="list">
+                <ul>
+                  <li>Marthwaite, Sedbergh</li>
+                  <li>Cumbria</li>
+                  <li>+00 44 123 4567</li>
+                </ul>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>OPEN TIMES</li>
+                  <li>MON - FRI: 09:00 AM - 10:00 PM</li>
+                  <li>SAT - SUN: 09:00 AM - 11:30 PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="./src/javascript/form.js"></script>
+  </body>
+</html>

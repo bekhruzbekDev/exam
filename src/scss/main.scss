@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import "./theme/reset";
+@import "./theme/variables";
+@import "./theme/style";
+body {
+  font-family: "League Spartan", sans-serif;
+  color: #ffffff;
+}
+.header {
+  min-height: 820px;
+  background-image: url(/src/img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 65px;
+  .header-container {
+    .logo {
+      margin-bottom: 153px;
+    }
+    .text {
+      width: 100%;
+      max-width: 507px;
+      h1 {
+        font-size: 80px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+      }
+      div {
+        width: 100%;
+        max-width: 445px;
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 65px;
+        }
+      }
+    }
+  }
+}
+.enjoyable {
+  position: relative;
+  .icons-bg {
+    position: absolute;
+    top: 250px;
+  }
+  .enjoyable-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    .image {
+      height: 650px;
+      .enjoyable-img {
+        position: absolute;
+        bottom: 0px;
+        &:hover{
+          transform: scale(1.005);
+          transition: 1s;
+          box-shadow: 0 12px 12px 5px  rgba(193, 187, 187, 0.811);
+  
+        }
+      }
+      .enjoyable-tablet {
+        display: none;
+      }
+      .enjoyable-mobile {
+        display: none;
+      }
+    }
+  }
+}
+.food {
+  position: relative;
+
+  .icons-bg {
+    border-radius: 100px 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .card-icon {
+    position: absolute;
+    right: 100px;
+    top: 380px;
+    z-index: 1;
+  }
+  .food-container {
+    display: flex;
+    justify-content: space-between;
+    .image {
+      position: relative;
+      .food-img {
+        position: relative;
+        top: 90px;
+        &:hover{
+          transform: scale(1.005);
+          transition: 1s;
+  
+        }
+      }
+      .food-tablet {
+        display: none;
+      }
+      .food-mobile {
+        display: none;
+      }
+    }
+    .wrapper {
+      padding-top: 321px;
+    }
+  }
+}
+.our-menu {
+  min-height: 761px;
+  background-color: #000;
+  padding: 200px 165px 120px 165px;
+  .menu-container {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      gap: 20px;
+      .text {
+        width: 445px;
+        h2 {
+          margin-bottom: 27px;
+        }
+        p {
+          line-height: 30px;
+        }
+      }
+      .cards {
+        .card {
+          width: 100%;
+          max-width: 540px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          min-height: 120px;
+          margin-bottom: 24px;
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+          .image {
+            display: flex;
+            img {
+              width: 128px;
+              height: 96px;
+            }
+            span {
+              width: 32px;
+              margin-top: 15px;
+              height: 1px;
+              background-color: #9e7f66;
+            }
+          }
+          .card-text {
+            h2 {
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.information-card {
+  margin-bottom: 160px;
+  position: relative;
+  .icons-bg {
+    position: absolute;
+    width: 545px;
+    left: 0;
+    top: 0;
+  }
+  .icon {
+    position: absolute;
+    top: 120px;
+    left: 170px;
+  }
+  .information-container {
+    padding-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    #infoImg {
+      width: 540px;
+      height: 600px;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.005);
+        transition: 1s;
+        box-shadow: 0 12px 12px 5px  rgba(193, 187, 187, 0.811);
+
+      }
+    }
+    .information-text {
+      width: 100%;
+      max-width: 445px;
+      // border: 1px solid red;
+      padding-top: 70px;
+      h2 {
+        letter-spacing: -0.01em;
+        color: #242b37;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 150%;
+        color: #242b37;
+        margin-bottom: 60px;
+      }
+      button {
+        border: none;
+        background: #111;
+        margin-bottom: 80px;
+        &:hover{
+          background-color: transparent;
+          border: 1px solid black;
+        }
+      }
+      h4 {
+        color: rgba(76, 76, 76, 0.5);
+        cursor: pointer;
+        margin-bottom: 12px;
+        position: relative;
+      }
+      .infoBtn:hover {
+        color: #4c4c4c;
+        &::before {
+          content: "";
+          width: 95px;
+          height: 1px;
+          background: #9e7f66;
+          cursor: pointer;
+          position: absolute;
+          left: -120px;
+        }
+      }
+      .active {
+        color: #4c4c4c;
+      }
+      .active::before {
+        content: "";
+        width: 95px;
+        height: 1px;
+        background: #9e7f66;
+        cursor: pointer;
+        position: absolute;
+        left: -120px;
+      }
+    }
+  }
+}
+.footer {
+  .footer-image {
+    min-height: 240px;
+    background-image: url("../img/footer-bg_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 88px;
+      h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        align-items: baseline;
+      }
+    }
+  }
+  .footer-info {
+    // min-height: 240px;
+    background-color: #000;
+    .footer-container {
+      padding: 76px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      .footer-list {
+        padding-top: 10px;
+        width: 100%;
+        max-width: 814px;
+        display: flex;
+        gap: 124px;
+        .list {
+          ul {
+            li {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 200%;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
