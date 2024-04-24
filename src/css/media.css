@@ -501,7 +501,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0;
-    border: 1px solid red;
   }
 }
 @media (max-width: 1350px) {
