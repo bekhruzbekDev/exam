@@ -67,10 +67,10 @@ function validation(e) {
   month =newDate.getMonth()+1
 
   let dateArr = [];
-  if (date[0].value == "" || date[0].value > 12 || Number(date[0].value) <month) {
+  if (date[0].value == "" || date[0].value > 12 || Number(date[0].value) <month ||Number(date[0].value) <=0) {
     dateArr.push(false);
 
-  }if(date[1].value == "" || date[1].value > 31) {
+  }if(date[1].value == "" || date[1].value > 31|| date[1].value <=0) {
     dateArr.push(false);
    }if (+date[2].value !== newDate.getFullYear()||date[2].value =="") {
      dateArr.push(false)
@@ -95,7 +95,7 @@ function validation(e) {
 
  }
 //time validation
-if(time[0].value ==""||+time[0].value >12||time[1].value ==""||+time[1].value >59){
+if(time[0].value ==""||+time[0].value >12||+time[0].value <0||time[1].value ==""||+time[1].value >59||+time[1].value <0){
   time.forEach(item=>{
     item.classList.add("errorInput")
   })
