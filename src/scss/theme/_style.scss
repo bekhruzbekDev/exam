@@ -24,11 +24,11 @@
   margin-bottom: 55px;
 }
 .description {
-  font-size: 20px;
+  font-size: var(--fs-h2);
   font-weight: 400;
 }
 .title {
-  font-size: 48px;
+  font-size: var(--fs-h1);
   font-weight: 700;
   letter-spacing: -0.5px;
 }
